@@ -1,0 +1,34 @@
+/* TODO: Universal Selector; Label selector type */
+* {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  }
+
+/* Label: Element Selector; Placeholder Image Size & Background Color */
+body {
+  background-color: lemonchiffon;
+}
+
+/* Label: Element Selector; Placeholder Image Size & Background Color */
+header,
+footer {
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  color: #f0ead6;
+  background-color: #191970;
+}
+
+figure {
+  width: 200px;
+  background-color: #f0ead6;
+}
+
+/* Label: Class Selector; place holder "lorem ipsum..." */
+.highlighted-text {
+  font-weight: bolder;
+}
+
+/* TODO: ID Selector; Background color on contact section */
+#contact-section {
+  background-color: #f0ead6;
+}
