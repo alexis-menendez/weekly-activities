@@ -8,6 +8,7 @@ body {
     background-color: #d9dcd6;
 }
 
+/* This is the header; top of page */
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -50,6 +51,7 @@ p {
     font-size: 16px;
 }
 
+/* This is the background image; top of page */
 .hero {
     height: 800px;
     width: 100%;
@@ -59,6 +61,13 @@ p {
     background-position: center;
 }
 
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/* This is the main content; middle of page */
 .float-left {
     float: left;
     margin-right: 25px;
@@ -69,11 +78,6 @@ p {
     margin-left: 25px;
 }
 
-.content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
-}
 
 .benefits {
     margin-right: 20px;
@@ -86,6 +90,8 @@ p {
     background-color: #2589bd;
 }
 
+/* group duplicate code into classes */
+/* this is the right-column text */
 .benefit-lead {
     margin-bottom: 32px;
     color: #ffffff;
@@ -101,6 +107,8 @@ p {
     color: #ffffff;
 }
 
+/* group duplicate code into classes */
+/* this is the right-column sub-titles */
 .benefit-lead h3 {
     margin-bottom: 10px;
     text-align: center;
@@ -116,6 +124,8 @@ p {
     text-align: center;
 }
 
+/* group duplicate code into classes */
+/* this is the right-column icon images */
 .benefit-lead img {
     display: block;
     margin: 10px auto;
@@ -134,6 +144,7 @@ p {
     max-width: 150px;
 }
 
+/* group duplicate code into classes */
 .search-engine-optimization {
     margin-bottom: 20px;
     padding: 50px;
@@ -161,6 +172,7 @@ p {
     color: #ffffff;
 }
 
+/* group duplicate code into classes */
 .search-engine-optimization img {
     max-height: 200px;
 }
@@ -173,6 +185,7 @@ p {
     max-height: 200px;
 }
 
+/* group duplicate code into classes */
 .search-engine-optimization h2 {
     margin-bottom: 20px;
     font-size: 36px;
@@ -188,6 +201,7 @@ p {
     font-size: 36px;
 }
 
+/* This is the footer; bottom of page */
 .footer {
     padding: 30px;
     clear: both;
