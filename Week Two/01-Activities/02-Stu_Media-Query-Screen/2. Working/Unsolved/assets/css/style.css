@@ -19,7 +19,25 @@ header {
   border-width: 1px;
   padding: 10px;
   float: left;
-  width: 25%;
+  width: 25%; /* Default width for larger screens */
+}
+
+@media screen and (max-width: 992px) {
+  .card {
+    width: 50%; /* Split into two columns */
+  }
+  header {
+    background: #772017; /*Optional: change header background color*/
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 100%; /* Stack on top of each other */
+  }
+  header {
+    background: #bb8588; /*Optional: change header background color*/
+  }
 }
 
 .card header {

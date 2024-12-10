@@ -1,12 +1,15 @@
+/* Ensures padding and border are included in the element's total width and height */
 * {
   box-sizing: border-box;
 }
 
+/* Base styles for the body */
 body {
   font-family: Arial;
   margin: 0;
 }
 
+/* Styles for the header */
 header {
   padding: 40px;
   text-align: center;
@@ -14,15 +17,13 @@ header {
   color: #fff;
 }
 
-/* 
-What happens when we set the display property to flex? 
-TODO: Write your answer here 
-*/
+/* Styles for the navigation bar */
 nav {
   display: flex;
   background-color: #d8a47f;
 }
 
+/* Styles for the navigation links */
 nav a {
   color: #13293d;
   padding: 14px 20px;
@@ -30,15 +31,13 @@ nav a {
   text-align: center;
 }
 
-/* 
-What is the flex-wrap property? 
-TODO: Write your answer here 
-*/
+/* Styles for the main content area */
 main {
   display: flex;
   flex-wrap: wrap;
 }
 
+/* Styles for the aside element */
 aside {
   flex: 1;
   background-color: #b9c6ae;
@@ -46,7 +45,7 @@ aside {
   text-align: center;
 }
 
-
+/* Styles for the footer element.*/
 footer {
   padding: 20px;
   text-align: center;
@@ -54,10 +53,7 @@ footer {
   color: #fff;
 }
 
-/* 
-What does the justify-content property do? 
-TODO: Write your answer here 
-*/
+/* Styles for the product container */
 .products {
   flex: 4;
   background-color: #fff;
@@ -67,11 +63,7 @@ TODO: Write your answer here
   justify-content: center;
 }
 
-/* 
-What is the flex property a shorthand property for?
-What is it doing here? 
-TODO: Write your answer here 
-*/
+/* Styles for the product cards */
 .card {
   border-style: solid;
   border-width: 1px;
@@ -80,26 +72,131 @@ TODO: Write your answer here
   flex: 0 0 400px;
 }
 
+/* Styles for the header in product cards */
 .card header {
   padding: 20px;
 }
 
+/* Styles for the text in product card paragraphs */
 .card p {
   text-align: center;
 }
 
+/* Styles for the product card images */
 .card img {
   width: 100%;
 }
 
-/* 
-What does the flex-direction property define?
-What is it doing here? 
-TODO: Write your answer here 
-*/
+/* Media query for screens 768px or smaller */
 @media screen and (max-width: 768px) {
   main,
   nav {
     flex-direction: column;
   }
 }
+
+/* Asignment Questions */
+
+/* QUESTION 1
+  What does setting the box-sizing property to border-box do, and why is it useful?
+    Setting the box-sizing property to border-box ensures that the padding and border are included in the element's total width and height.
+    This makes it easier to size elements consistently.
+*/
+
+/* QUESTION 2
+  What happens when we set the display property to flex? 
+    Setting the display property to flex makes the container a flex container, enabling flexbox layout for its children. 
+*/
+
+/* QUESTION 3
+  What are the styles applied to the links inside the nav element, and what do they do?
+    Styles for the links inside the nav element.
+    Sets the text color, padding, removes text decoration, and centers the text.
+*/
+
+/* QUESTION 4
+  What is the flex-wrap property? 
+    The flex-wrap property specifies whether the flex items should wrap or not when they overflow the container.
+*/
+
+/* QUESTION 5
+  What are the styles applied to the aside element, and what do they do?
+    Styles for the aside element.
+    Sets the flex property to 1, background color to light green, padding, and centers the text.
+*/
+
+/* QUESTION 6
+  What does the justify-content property do? 
+    The justify-content property aligns the flex items along the main axis of the container, distributing space between and around them.
+*/
+
+/* QUESTION 7
+  What are the styles applied to the products container, and what do they do?  
+    Sets the flex property to 4, background color to white, padding, and enables flexbox layout.
+    The flex-wrap property allows the items to wrap, and justify-content centers the items.
+*/
+
+/* QUESTION 8
+  What is the flex property a shorthand property for? 
+    The flex property is a shorthand for flex-grow, flex-shrink, and flex-basis.
+
+  What is it doing here? 
+    It is setting the flex-grow, flex-shrink, and flex-basis values for the flex items, allowing them to grow and shrink as needed.
+*/
+
+/* QUESTION 9
+  What does the flex-direction property define? 
+    The flex-direction property defines the direction in which the flex items are placed in the flex container.
+
+  What is it doing here? 
+    It is setting the direction of the flex items, determining whether they are placed in a row, column, or other direction.
+*/
+
+/* QUESTION 10
+  What is the purpose of the media query at the end of the CSS file? 
+    The media query at the end of the CSS file applies specific styles when the screen width is 768px or smaller, adjusting the layout for smaller screens.
+*/
+
+/* QUESTION 11
+  What is the purpose of the header element in the HTML file? 
+    The header element typically contains introductory content or navigation links for the page.
+*/
+
+/* QUESTION 12
+  What is the purpose of the nav element in the HTML file? 
+    The nav element typically contains navigation links for the website, allowing users to navigate to different sections or pages.
+*/
+
+/* QUESTION 13
+  What is the purpose of the main element in the HTML file? 
+    The main element typically contains the primary content of the webpage, such as articles, sections, or other content.
+*/
+
+/* QUESTION 14
+  What is the purpose of the aside element in the HTML file? 
+    The aside element typically contains content related to the main content, such as sidebars, advertisements, or other supplementary information.
+*/
+
+/* QUESTION 15
+  What is the purpose of the footer element in the HTML file? 
+    The footer element typically contains information about the website, copyright notices, contact information, or other footer content.
+*/
+
+/* QUESTION 16
+  What is the purpose of the card class in the CSS file? 
+    The card class styles the product cards, setting borders, padding, and other styles to create a consistent card layout for the products.
+*/
+
+/* QUESTION 17
+  What is the purpose of the products class in the CSS file? 
+    The products class styles the product container, setting background color, padding, and flex properties to create a layout for displaying the products.
+*/
+
+/* QUESTION 17
+  What other CSS property can we use to create responsive layouts?
+    Other CSS properties that can be used to create responsive layouts include: 
+      media queries
+      flexbox
+      grid layout
+      viewport units.
+*/

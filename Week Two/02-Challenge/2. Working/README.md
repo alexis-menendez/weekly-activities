@@ -15,9 +15,11 @@ Let’s take a look at what a user story written from the perspective of a hirin
 ## User Story
 
 ```md
-AS AN employer
-I WANT to view a potential employee's deployed portfolio of work samples
-SO THAT I can review samples of their work and assess whether they're a good candidate for an open position
+* AS A developer,
+
+* I WANT to create a portfolio of work samples for potential employers to view,
+
+* SO THAT they can review samples of my work and assess whether I’m a good candidate for an open position.
 ```
 
 ## Acceptance Criteria
@@ -25,19 +27,17 @@ SO THAT I can review samples of their work and assess whether they're a good can
 Here are the critical requirements necessary to develop a portfolio that satisfies a typical hiring manager’s needs:
 
 ```md
-GIVEN I need to sample a potential employee's previous work
-WHEN I load their portfolio
-THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
-WHEN I click one of the links in the navigation
-THEN the UI scrolls to the corresponding section
-WHEN I click on the link to the section about their work
-THEN the UI scrolls to a section with titled images of the developer's applications
-WHEN I am presented with the developer's first application
-THEN that application's image should be larger in size than the others
-WHEN I click on the images of the applications
-THEN I am taken to that deployed application
-WHEN I resize the page or view the site on various screens and devices
-THEN I am presented with a responsive layout that adapts to my viewport
+* IT'S DONE WHEN I load the portfolio and I am presented with my name, a recent photo or avatar, and links to sections about me, my work, and how to contact me.
+
+* IT'S DONE WHEN I click one of the links in the navigation and the UI scrolls to the corresponding section
+
+* IT'S DONE WHEN I click on the link to the section about my work and the UI scrolls to a section with titled images of my applications.
+
+* IT'S DONE WHEN I am presented with my first application and that application's image is larger in size than the others.
+
+* IT'S DONE WHEN I click on the images of the applications and I am taken to that deployed application.
+
+* IT'S DONE WHEN I resize the page or view the site on various screens and devices and I am presented with a responsive layout that adapts to my viewport.
 ```
 
 ## Mock-Up

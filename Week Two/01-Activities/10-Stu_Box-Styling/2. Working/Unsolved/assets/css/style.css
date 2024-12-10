@@ -61,15 +61,24 @@ footer {
   justify-content: space-evenly;
   align-items: flex-start;
 }
+/* _______________________________________________________________________________
+  TO DO: Add properties to the cards to achieve the required look 
+    - add rounded corners
+    - add drop shadow
+    - add slight rotation*/
 
-/* TODO: Add properties to the cards to achieve the required look */
-.card {
-  border-style: solid;
-  border-width: 1px;
-  padding: 10px;
-  margin: 20px;
-  flex: 0 0 300px;
-}
+  .card {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 15px; /* Adds rounded corners */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Adds drop shadow */
+    padding: 10px;
+    margin: 20px;
+    flex: 0 0 300px;
+    transform: rotate(-2deg); /* Adds slight rotation */
+  }
+
+/* _______________________________________________________________________________ */
 
 .card header {
   padding: 20px;

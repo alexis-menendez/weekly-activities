@@ -1,7 +1,9 @@
+/* Ensures padding and border are included in the element's total width and height */
 * {
   box-sizing: border-box;
 }
 
+/* Base styles for the body */
 body {
   font-family: Arial;
   margin: 0;
@@ -11,6 +13,7 @@ body {
   justify-content: flex-start;
 }
 
+/* Styles for the header */
 header {
   padding: 40px;
   text-align: center;
@@ -18,11 +21,14 @@ header {
   color: #fff;
 }
 
+/* Styles for the navigation bar */
 nav {
   display: flex;
+  justify-content: flex-end; /* CHANGE MADE: Aligns the navigation links to the right */
   background-color: #d8a47f;
 }
 
+/* Styles for the navigation links */
 nav a {
   color: #13293d;
   padding: 14px 20px;
@@ -30,6 +36,11 @@ nav a {
   text-align: center;
 }
 
+/* This is where the styles for the main content area would go */
+
+/* This is where the styles for the aside element would go */
+
+/* Styles for the footer element.*/
 footer {
   padding: 20px;
   text-align: center;
@@ -38,42 +49,57 @@ footer {
   margin-top: auto;
 }
 
+/* Styles for the product container */
 .product {
   display: flex;
+  align-items: center; /* CHANGE MADE: Center items vertically */
+  justify-content: center; /* CHANGE MADE: Center items horizontally */
   width: 90%;
   margin: 1% auto;
 }
 
+/* Styles for the product slideshow buttons */
 .product button {
-  font-size: 150%;
+  font-size: 100%; /* CHANGE MADE: Resize buttons to smaller icons */
 }
 
+/* Styles for the product slideshow */
 .product-slideshow {
   display: flex;
 }
 
+/* Styles for the product slideshow image */
 .product-image {
   width: 100%;
 }
 
+/* Styles for the product slideshow details */
 .product-details {
   margin-left: 3%;
   flex: 0 0 60%;
 }
 
+/* 
+This is where the styles for the product cards would go 
+  . card {
+  .card header { (styles for the header in product cards)
+  .card p { (styles for the text in product card paragraphs)
+  .card img { (styles for the product card images)
+*/
+
+/* Media query for screens 768px or smaller */
 @media screen and (max-width: 768px) {
   main,
   nav,
   .product {
-    flex-direction: column;
+    flex-direction: column; /* Changes the flex direction to column for smaller screens */
   }
 
   .product-slideshow button {
-    /* Removes the slideshow buttons from the document flow */
-    display: none;
+    display: none; /* Removes the slideshow buttons from the document flow */
   }
 
   .product-details {
-    margin-left: 0;
+    margin-left: 0; /* Removes the margin from the product details */
   }
 }
