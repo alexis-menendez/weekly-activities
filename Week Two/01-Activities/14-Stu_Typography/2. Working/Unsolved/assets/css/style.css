@@ -1,8 +1,15 @@
-/* TODO: Set the font size and line height */
-body {
-  display: flex;
-  flex-direction: column;
-}
+/*_______________________________________________________________
+    TO DO: 
+      - Set the font size
+      - Set line height */
+
+  body {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+/*_______________________________________________________________*/
 
 header {
   display: flex;
@@ -13,17 +20,43 @@ header {
   color: #fff;
 }
 
-/* TODO: Change the heading size to 200%, give it a margin all around, and assign font family to serif */
-h1 {
-}
+/*_______________________________________________________________
+    TO DO: 
+      - Change the heading size to 200%
+      - Give it a margin all around
+      - Assign font family to serif */
 
-/* TODO: Change the heading size to be slightly smaller than h1, give it a margin only on the top and bottom, and assign font family to serif */
-h2 {
-}
+  h1 {
+    font-size: 200%;
+    margin: 2%;
+    font-family: serif;
+  }
+/*_______________________________________________________________*/
 
-/* TODO: Change header size to be slightly smaller than h2 and assign font family to serif */
-h3 {
-}
+/*_______________________________________________________________
+    TO DO: 
+      - Change the heading size to be slightly smaller than h1
+      - Give it a margin only on the top and bottom
+      - Assign font family to serif */
+
+  h2 {
+    font-size: 180%;
+    margin: 2% 0;
+    font-family: serif;
+  }
+/*_______________________________________________________________*/
+
+/*_______________________________________________________________
+    TO DO: 
+      - Change the heading size to be slightly smaller than h2
+      - Assign font family to serif */
+
+  h3 {
+    font-size: 160%;
+    font-family: serif;
+  }
+/*_______________________________________________________________*/
+
 
 nav ul {
   display: flex;
@@ -53,13 +86,27 @@ article {
   border-bottom: 1px solid #d8a47f;
 }
 
-/* TODO: Add a margin to the top and bottom of the paragraphs */
-article p {
-}
+/*_______________________________________________________________
+    TO DO: 
+      - Add a margin to the top and bottom of the paragraphs */
 
-/* TODO: Add a margin to indent the list, give it square bullet points, and assign font family to monospace */
-article ul {
-}
+  article p {
+    margin: 2% 0;
+  }
+/*_______________________________________________________________*/
+
+/*_______________________________________________________________
+    TO DO: 
+      - Add a margin to indent the list
+      - Give it square bullet points
+      - Assign font family to monospace */
+
+  article ul {
+    margin-left: 2%;
+    list-style-type: square;
+    font-family: monospace;
+  }
+/*_______________________________________________________________*/
 
 aside {
   width: 25%;

@@ -87,11 +87,24 @@ footer {
   color: #fff;
 }
 
-/* TODO: Add styles that will hide the resource links by default */
+/*_______________________________________________________________
+    TO DO: 
+      - Add styles that will hide the resource links by default  */
 
+  .resources .links {
+    display: none;
+    padding: 1 0%
+  }
+/*_______________________________________________________________*/
 
-
-/* TODO: Add styles that will display the links when the mouse hovers over the parent element */
+/*_______________________________________________________________
+    TO DO: 
+      - Add styles that will display the links when the mouse hovers over the parent element  */
+   
+  .resources:hover .links {
+    display: block;
+  }
+/*_______________________________________________________________*/
 
 
 
