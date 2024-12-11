@@ -27,6 +27,7 @@ h4,
 h5,
 h6 {
   margin: 0;
+  white-space: nowrap;
 }
 
 p {
@@ -57,6 +58,21 @@ nav {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+nav ul {
+  list-style-type: none;  /* Remove default list bullets */
+  padding: 0;             /* Remove padding */
+  margin: 0;              /* Remove margin */
+  display: flex;          /* Use flexbox to lay items horizontally */
+}
+
+nav ul li {
+  margin-right: 20px;     /* Optional: space between items */
+}
+
+nav ul li:last-child {
+  margin-right: 0;        /* Remove right margin from last item */
 }
 
 nav a {
@@ -148,6 +164,35 @@ main {
   margin-bottom: 20px;
 }
 
+#about {
+  padding: 20px; /* Optional: add padding to the section */
+  display: flex; /* Use flexbox to arrange child elements horizontally */
+  flex-direction: row; /* Stack child elements vertically */
+}
+
+.about-content {
+  display: flex;            /* Use flexbox to arrange child elements horizontally */
+  align-items: stretch;      /* Vertically align items in the center */
+  gap: 20px;                /* Optional: add space between elements */
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;   /* Stack child elements vertically */
+}
+
+#work {
+  padding: 20px; /* Optional: add padding to the section */
+  display: flex; /* Use flexbox to arrange child elements horizontally */
+  flex-direction: row; /* Stack child elements vertically */
+}
+
+.work-content {
+  display: flex;            /* Use flexbox to arrange child elements horizontally */
+  align-items: stretch;      /* Vertically align items in the center */
+  gap: 20px;                /* Optional: add space between elements */
+}
+
 .flex-container {
   display: flex;
   flex-wrap: wrap;
@@ -191,15 +236,34 @@ main {
   font-size: 1.6rem;
 }
 
-.contact address {
+#contact {
+  padding: 20px; /* Optional: add padding to the section */
+  display: flex; /* Use flexbox to arrange child elements horizontally */
+  flex-direction: row;
+}
+
+.contact-content {
+  display: flex;            
+  align-items: stretch;
+  gap: 20px;                
+}
+
+.line {
+  width: 1px;               /* Set the width of the line */
+  flex-grow: 1;            
+  background-color: #000;   /* Set the color of the line (black in this case) */
+}
+
+address {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   height: 100%;
+  gap: 20px; /* Added gap for spacing */
 }
 
-.contact address a {
+address a {
   color: var(--tertiary);
   padding: 5px;
   text-decoration: none;
@@ -214,7 +278,7 @@ main {
   display: inline-block;
 }
 
-.contact address a:hover {
+address a:hover {
   background-size: 100% 88%;
   color: var(--secondary);
 }
