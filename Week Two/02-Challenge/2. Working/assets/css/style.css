@@ -179,12 +179,7 @@ main {
     display: inline;
   }
 /* END: HERO SECTION */
-  /* 
-    line 1
-    line 2
-    line 3
-    line 4
-  */
+
 
 /* START:  */ /* SEE NOTES ABOUT THIS SECTIONS PURPOSE BELOW */
   .page-wrapper {
@@ -260,6 +255,7 @@ main {
     margin-bottom: 20px;  <--This sets the bottom margin of the paragraphs to 20px.
   }
 END OF NOTES ABOUT PAGE SECTION STYLES */
+
 
 /* START: ABOUT SECTION */
   #about img {
