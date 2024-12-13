@@ -61,18 +61,18 @@ nav {
 }
 
 nav ul {
-  list-style-type: none;  /* Remove default list bullets */
-  padding: 0;             /* Remove padding */
-  margin: 0;              /* Remove margin */
-  display: flex;          /* Use flexbox to lay items horizontally */
+  list-style-type: none;  
+  padding: 0;            
+  margin: 0;              
+  display: flex;          
 }
 
 nav ul li {
-  margin-right: 20px;     /* Optional: space between items */
+  margin-right: 20px;    
 }
 
 nav ul li:last-child {
-  margin-right: 0;        /* Remove right margin from last item */
+  margin-right: 0;        
 }
 
 nav a {
@@ -164,33 +164,39 @@ main {
   margin-bottom: 20px;
 }
 
+#about img {
+  max-width: 100%; 
+  height: auto; 
+  width: 350px; 
+}
+
 #about {
-  padding: 20px; /* Optional: add padding to the section */
-  display: flex; /* Use flexbox to arrange child elements horizontally */
-  flex-direction: row; /* Stack child elements vertically */
+  padding: 20px;
+  display: flex;
+  flex-direction: row; 
 }
 
 .about-content {
-  display: flex;            /* Use flexbox to arrange child elements horizontally */
-  align-items: stretch;      /* Vertically align items in the center */
-  gap: 20px;                /* Optional: add space between elements */
+  display: flex;            
+  align-items: stretch;      
+  gap: 20px;               
 }
 
 .about-text {
   display: flex;
-  flex-direction: column;   /* Stack child elements vertically */
+  flex-direction: column;   
 }
 
 #work {
-  padding: 20px; /* Optional: add padding to the section */
-  display: flex; /* Use flexbox to arrange child elements horizontally */
-  flex-direction: row; /* Stack child elements vertically */
+  padding: 20px; 
+  display: flex; 
+  flex-direction: row; 
 }
 
 .work-content {
-  display: flex;            /* Use flexbox to arrange child elements horizontally */
-  align-items: stretch;      /* Vertically align items in the center */
-  gap: 20px;                /* Optional: add space between elements */
+  display: flex;            
+  align-items: stretch;     
+  gap: 20px;              
 }
 
 .flex-container {
@@ -217,8 +223,7 @@ main {
   font-size: 0.9rem;
 }
 
-/* feature first portfolio item */
-.flex-item:first-child {
+.flex-item:first-child { /* this is the first portfolio item */
     min-height: 400px;
     flex-basis: 100%;
 }
@@ -237,8 +242,8 @@ main {
 }
 
 #contact {
-  padding: 20px; /* Optional: add padding to the section */
-  display: flex; /* Use flexbox to arrange child elements horizontally */
+  padding: 20px; 
+  display: flex;
   flex-direction: row;
 }
 
@@ -249,9 +254,9 @@ main {
 }
 
 .line {
-  width: 1px;               /* Set the width of the line */
+  width: 1px;              
   flex-grow: 1;            
-  background-color: #000;   /* Set the color of the line (black in this case) */
+  background-color: #000;   
 }
 
 address {
@@ -260,7 +265,7 @@ address {
   justify-content: space-around;
   align-items: center;
   height: 100%;
-  gap: 20px; /* Added gap for spacing */
+  gap: 20px; 
 }
 
 address a {
@@ -283,37 +288,49 @@ address a:hover {
   color: var(--secondary);
 }
 
+/* TODO: figure out how to make images show up in boxes in correct size*/
 /* portfolio project images */
-/* TODO: Add portfolio project images here using background images*/
+/* Application 1*/
 .run-buddy {
-  /* background-image: url('path/to/image1.jpg');*/  
+  background-image: url('assets/images/application.jpg');
+  background-size: cover;
+  background-position: center; 
 }
 
+/* Application 2*/
 .led-wall {
-  /* background-image: url('path/to/image1.jpg');*/  
+  background-image: url('assets/images/application.jpg');
+  background-size: cover;
+  background-position: center; 
 }
 
+/* Application 3*/
 .react-calc {
-  /* background-image: url('path/to/image1.jpg');*/  
+  background-image: url('assets/images/application.jpg');
+  background-size: cover;
+  background-position: center; 
 }
 
+/* Application 4*/
 .pastel-puzzles {
-  /* background-image: url('path/to/image1.jpg');*/  
+  background-image: url('assets/images/application.jpg');
+  background-size: cover;
+  background-position: center; 
 }
 
+/* Application 5*/
 .surf-report {
-  /* background-image: url('path/to/image1.jpg');*/  
+  background-image: url('assets/images/application.jpg');
+  background-size: cover;
+  background-position: center; 
 }
 
 
 /* Existing CSS rules */
 
-/* Add space between paragraphs */
 #about p {
-  margin-bottom: 1em; /* Adjust the value as needed */
+  margin-bottom: 1em; /* testing: Add space between paragraphs */
 }
-
-/* TODO: add media query for a max-width of 768px */
 
 /* media queries */
 
@@ -349,8 +366,14 @@ address a:hover {
     text-align: left;
     font-size: 7vw;
   }
-}
 
+    .about img {
+      width: 300px;
+      height: 300px;
+    }
+  }
+
+/* TODO: add media query for a max-width of 768px */
 /* Media queries for a max-width of 768px */
 @media screen and (max-width: 768px) {
   header {
@@ -384,11 +407,27 @@ address a:hover {
     font-size: 7vw;
   }
 
+  .about img {
+    width: 200px;
+    height: 200px;
+  }
+
   .flex-item {
     flex-basis: 100%;
+    min-height: 200px; /* testing: Set consistent height */
+    display: flex; /* testing: Ensures consistent alignment and sizing */
+    align-items: center; /* testing: Centers content vertically */
+    justify-content: center; /* testing: Centers content horizontally */
   }
 
   .flex-item:first-child {
     min-height: 200px;
   }
+}
+
+@media screen and (max-width: 480px) {
+    .about img {
+      width: 100px;
+      height: 100px;
+    }
 }
