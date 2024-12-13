@@ -1,8 +1,17 @@
+/* 
+  Universal selector that applies box-sizing: border-box to all elements.
+  This ensures that padding and border are included in the element's total width and height,
+  making it easier to manage layout and avoid unexpected sizing issues.
+*/
 * {
   box-sizing: border-box;
 }
 
-/* brand color palette */
+/* 
+  CSS custom properties (variables) defined in the :root selector.
+  These variables store color values that can be reused throughout the stylesheet,
+  making it easier to maintain and update the color scheme of the website.
+*/
 :root {
   --primary: rgba(68, 88, 119, 1);
   --secondary: rgba(146, 204, 206, 1);
@@ -11,6 +20,13 @@
   --light: rgba(238, 238, 247, 1);
 }
 
+
+/* 
+  Global styles for the body element.
+  This sets the default margin and padding to 0, applies a specific font family,
+  sets the text color to the primary color, sets the background color to the light color,
+  and sets the line height for text to 1.5 for better readability.
+*/
 body {
   margin: 0;
   padding: 0;
@@ -20,6 +36,11 @@ body {
   line-height: 1.5;
 }
 
+
+/* 
+  Global styles for heading elements (h1 to h6).
+  This removes the default margin and prevents text from wrapping.
+*/
 h1,
 h2,
 h3,
@@ -30,10 +51,19 @@ h6 {
   white-space: nowrap;
 }
 
+
+/* 
+  Global styles for paragraph elements.
+  This removes the default margin from all paragraph elements.
+*/
 p {
   margin: 0;
 }
 
+
+/* 
+  Global styles for the header element.
+*/
 header {
   padding: 15px 6% 15px 0;
   display: flex;
@@ -45,6 +75,9 @@ header {
   box-shadow: 0 5px 35px rgba(146, 204, 206, 0.4);
 }
 
+/* 
+  Global styles for the h1 element inside the header element.
+*/
 header h1 {
   color: var(--tertiary);
   background-color: var(--secondary);
@@ -54,12 +87,20 @@ header h1 {
   line-height: 1;
 }
 
+
+/* 
+  Styles for the nav element.
+*/
 nav {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
+/* 
+  Styles for the unordered list inside the nav element.
+  This removes the default list styling and uses flexbox for layout.
+*/
 nav ul {
   list-style-type: none;  
   padding: 0;            
@@ -67,14 +108,26 @@ nav ul {
   display: flex;          
 }
 
+/* 
+  Styles for the list items inside the unordered list in the nav element.
+  This adds space to the right of each list item.
+*/
 nav ul li {
   margin-right: 20px;    
 }
 
+/* 
+  Styles for the list items inside the unordered list in the nav element.
+  This adds space to the right of each list item.
+*/
 nav ul li:last-child {
   margin-right: 0;        
 }
 
+
+/* 
+  Styles for the anchor elements (links) inside the nav element.
+*/
 nav a {
   text-decoration: none;
   padding: 5px 10px;
@@ -88,20 +141,42 @@ nav a {
   font-size: 1.4rem;
 }
 
+/* 
+  Hover effect for links inside the nav element.
+  This changes the background size and text color when the user hovers over a link.
+*/
 nav a:hover {
   background-size: 100% 100%;
   color: var(--primary);
 }
 
+/* 
+  Styles for the last link inside the nav element.
+  This removes the right margin from the last link.
+*/
 nav a:last-child {
   margin-right: 0;
 }
 
+/* 
+  Styles for the main element.
+  This adds a margin to the top and bottom of the main content area.
+*/
 main {
   margin-top: 20px;
   margin-bottom: 45px;
 }
 
+/* 
+  Styles for the hero-banner element:
+    - Sets background, size, position, and layout
+    - Prominent section at the top of a webpage
+    - Grabs user's attention and conveys key information or a call to action
+    - Typically includes:
+        - a large background image or video
+        - a headline
+        - sometimes additional text or buttons
+*/
 .hero-banner {
   background: rgb(68, 88, 120);
   background-image: url("../images/02-hero-bg.jpg"), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
@@ -117,10 +192,16 @@ main {
   text-align: right;
 }
 
+/* 
+  Styles for div elements inside the hero-banner element.
+  This sets the flex properties to control the size and growth of the div.
+*/
 .hero-banner div {
   flex: 0 0 90%;
 }
-
+/* 
+  Styles for the h2 element inside the hero-banner element.
+*/
 .hero-banner h2 {
   background-color: var(--secondary);
   color: var(--tertiary);
@@ -131,12 +212,20 @@ main {
   display: inline;
 }
 
+/* 
+  Styles for the page-wrapper element.
+  This sets the maximum width and centers the element horizontally.
+*/
 .page-wrapper {
   max-width: 88%;
   margin-left: auto;
   margin-right: auto;
 }
 
+/* 
+  Styles for the page-section element.
+  This adds margin and padding, sets the display to flex, and controls the layout.
+*/
 .page-section {
   margin: 25px 0;
   padding: 10px 0;
@@ -147,6 +236,10 @@ main {
   justify-content: space-between;
 }
 
+/* 
+  Styles for the h2 element inside the page-section element.
+  This sets the flex properties, text alignment, padding, border, font size, and line height.
+*/
 .page-section > h2 {
   flex: 0 0 20%;
   text-align: right;
@@ -156,55 +249,103 @@ main {
   line-height: 1.1;
 }
 
+/* 
+  Styles for the div element inside the page-section element.
+  This sets the flex properties to control the size and growth of the div.
+*/
 .page-section > div {
   flex: 0 0 77%;
 }
 
+/* 
+  Styles for the p elements inside the page-section element.
+  This adds margin to the bottom of each paragraph.
+*/
 .page-section p {
   margin-bottom: 20px;
 }
 
+/* 
+  Styles for the images in the about element.
+  This adds padding and sets the display to flex with a row layout.
+*/
 #about img {
   max-width: 100%; 
   height: auto; 
   width: 350px; 
 }
 
+/* 
+  Styles for paragraph elements inside the about section.
+  This adds space between paragraphs.
+*/
+#about p {
+  margin-bottom: 1em; /* testing: Add space between paragraphs */
+}
+
+/* 
+  Styles for the about element.
+  This adds padding and sets the display to flex with a row layout.
+*/
 #about {
   padding: 20px;
   display: flex;
   flex-direction: row; 
 }
 
+/* 
+  Styles for the about-content element.
+  This sets the display to flex, aligns items, and adds space between elements.
+*/
 .about-content {
   display: flex;            
   align-items: stretch;      
   gap: 20px;               
 }
 
+/* 
+  Styles for the about-text element.
+  This sets the display to flex with a column layout.
+*/
 .about-text {
   display: flex;
   flex-direction: column;   
 }
 
+/* 
+  Styles for the work element.
+  This adds padding and sets the display to flex with a row layout.
+*/
 #work {
   padding: 20px; 
   display: flex; 
   flex-direction: row; 
 }
 
+/* 
+  Styles for the work-content element.
+  This sets the display to flex, aligns items, and adds space between elements.
+*/
 .work-content {
   display: flex;            
   align-items: stretch;     
   gap: 20px;              
 }
 
+/* 
+  Styles for the work-text element.
+  This sets the display to flex with a column layout.
+*/
 .flex-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
+/* 
+  Styles for the flex-item element.
+  This sets the border, background color, text color, height, width, flex basis, display, alignment, padding, margin, text decoration, blend mode, size, and transition.
+*/
 .flex-item {
   border: 5px solid var(--secondary);
   background-color: var(--primary);
@@ -223,42 +364,74 @@ main {
   font-size: 0.9rem;
 }
 
+/* 
+  Styles for the first child of the flex-item element.
+  This sets the minimum height and flex basis.
+*/
 .flex-item:first-child { /* this is the first portfolio item */
     min-height: 400px;
     flex-basis: 100%;
 }
 
+/* 
+  Hover effect for the flex-item element.
+  This changes the background color when the user hovers over the element.
+*/
 .flex-item:hover {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+/* 
+  Styles for div elements inside the flex-item element.
+  This sets the background color and padding for the div.
+*/
 .flex-item div {
   background-color: var(--secondary);
   padding: 8px 10px;
 }
 
+/* 
+  Styles for the h3 element inside the flex-item element.
+  This sets the font size.
+*/
 .flex-item h3 {
   font-size: 1.6rem;
 }
 
+/* 
+  Styles for the contact section with the id "contact".
+  This sets the padding and uses flexbox for layout.
+*/
 #contact {
   padding: 20px; 
   display: flex;
   flex-direction: row;
 }
 
+/* 
+  Styles for the contact-content element.
+  This sets the display to flex, aligns items, and adds space between elements.
+*/
 .contact-content {
   display: flex;            
   align-items: stretch;
   gap: 20px;                
 }
 
+/* 
+  Styles for the line element.
+  This sets the width, growth behavior, and background color for the line.
+*/
 .line {
   width: 1px;              
   flex-grow: 1;            
   background-color: #000;   
 }
 
+/* 
+  Styles for the address element.
+  This sets the display to flex, wraps content, aligns items, and adds space between elements.
+*/
 address {
   display: flex;
   flex-wrap: wrap;
@@ -268,6 +441,10 @@ address {
   gap: 20px; 
 }
 
+/* 
+  Styles for the a elements inside the address element.
+  This sets the color, padding, text decoration, font size, font style, background image, background repeat, background size, background position, transition, margin, and display.
+*/
 address a {
   color: var(--tertiary);
   padding: 5px;
@@ -283,6 +460,10 @@ address a {
   display: inline-block;
 }
 
+/* 
+  Hover effect for the a elements inside the address element.
+  This changes the background size and text color when the user hovers over a link.
+*/
 address a:hover {
   background-size: 100% 88%;
   color: var(--secondary);
@@ -290,6 +471,15 @@ address a:hover {
 
 /* TODO: figure out how to make images show up in boxes in correct size*/
 /* portfolio project images */
+
+/* 
+  Styles for the background images of the application elements.
+  Each application has a unique class and the same background properties.
+    - background-image: url('assets/images/application.jpg'); Sets the background image for the element.
+    - background-size: cover; Ensures the background image covers the entire element.
+    - background-position: center; Centers the background image within the element.
+*/
+
 /* Application 1*/
 .run-buddy {
   background-image: url('assets/images/application.jpg');
@@ -328,11 +518,10 @@ address a:hover {
 
 /* Existing CSS rules */
 
-#about p {
-  margin-bottom: 1em; /* testing: Add space between paragraphs */
-}
-
 /* media queries */
+/* 
+  Media queries adjusts the layout and styles for smaller screens to ensure a responsive design.
+*/
 
 /* media queries for a max-width of 980px */
 @media screen and (max-width: 980px) {
