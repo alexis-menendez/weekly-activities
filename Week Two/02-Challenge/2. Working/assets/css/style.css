@@ -61,9 +61,7 @@ p {
 }
 
 
-/* 
-  Global styles for the header element.
-*/
+/* Global styles for the header element. */
 header {
   padding: 15px 6% 15px 0;
   display: flex;
@@ -75,9 +73,6 @@ header {
   box-shadow: 0 5px 35px rgba(146, 204, 206, 0.4);
 }
 
-/* 
-  Global styles for the h1 element inside the header element.
-*/
 header h1 {
   color: var(--tertiary);
   background-color: var(--secondary);
@@ -88,19 +83,13 @@ header h1 {
 }
 
 
-/* 
-  Styles for the nav element.
-*/
+/* Styles for the nav element.*/
 nav {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-/* 
-  Styles for the unordered list inside the nav element.
-  This removes the default list styling and uses flexbox for layout.
-*/
 nav ul {
   list-style-type: none;  
   padding: 0;            
@@ -108,26 +97,14 @@ nav ul {
   display: flex;          
 }
 
-/* 
-  Styles for the list items inside the unordered list in the nav element.
-  This adds space to the right of each list item.
-*/
 nav ul li {
   margin-right: 20px;    
 }
 
-/* 
-  Styles for the list items inside the unordered list in the nav element.
-  This adds space to the right of each list item.
-*/
 nav ul li:last-child {
   margin-right: 0;        
 }
 
-
-/* 
-  Styles for the anchor elements (links) inside the nav element.
-*/
 nav a {
   text-decoration: none;
   padding: 5px 10px;
@@ -141,484 +118,424 @@ nav a {
   font-size: 1.4rem;
 }
 
-/* 
-  Hover effect for links inside the nav element.
-  This changes the background size and text color when the user hovers over a link.
-*/
 nav a:hover {
   background-size: 100% 100%;
   color: var(--primary);
 }
 
-/* 
-  Styles for the last link inside the nav element.
-  This removes the right margin from the last link.
-*/
 nav a:last-child {
   margin-right: 0;
 }
 
-/* 
-  Styles for the main element.
-  This adds a margin to the top and bottom of the main content area.
-*/
+
+/* Styles for the main element. */
 main {
   margin-top: 20px;
   margin-bottom: 45px;
 }
 
-/* 
-  Styles for the hero-banner element:
-    - Sets background, size, position, and layout
-    - Prominent section at the top of a webpage
-    - Grabs user's attention and conveys key information or a call to action
-    - Typically includes:
-        - a large background image or video
-        - a headline
-        - sometimes additional text or buttons
-*/
-.hero-banner {
-  background: rgb(68, 88, 120);
-  background-image: url("../images/02-hero-bg.jpg"), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
-  background-size: cover;
-  background-position: center;
-  background-blend-mode: soft-light;
-  min-height: 30vh;
-  color: var(--light);
-  padding: 2% 6%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  text-align: right;
-}
-
-/* 
-  Styles for div elements inside the hero-banner element.
-  This sets the flex properties to control the size and growth of the div.
-*/
-.hero-banner div {
-  flex: 0 0 90%;
-}
-
-/* 
-  Styles for the h2 element inside the hero-banner element.
-*/
-.hero-banner h2 {
-  background-color: var(--secondary);
-  color: var(--tertiary);
-  margin: 0;
-  padding: 5px 10px;
-  font-size: 2.3rem;
-  line-height: 1.2;
-  display: inline;
-}
-
-/* 
-  Styles for the page-wrapper element.
-  This sets the maximum width and centers the element horizontally.
-*/
-.page-wrapper {
-  max-width: 88%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* 
-  Styles for the page-section element.
-  This adds margin and padding, sets the display to flex, and controls the layout.
-*/
-.page-section {
-  margin: 25px 0;
-  padding: 10px 0;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: stretch;
-  justify-content: space-between;
-}
-
-/* 
-  Styles for the h2 element inside the page-section element.
-  This sets the flex properties, text alignment, padding, border, font size, and line height.
-*/
-.page-section > h2 {
-  flex: 0 0 20%;
-  text-align: right;
-  padding-right: 15px;
-  border-right: 4px solid var(--primary);
-  font-size: 4vw;
-  line-height: 1.1;
-}
-
-/* 
-  Styles for the div element inside the page-section element.
-  This sets the flex properties to control the size and growth of the div.
-*/
-.page-section > div {
-  flex: 0 0 77%;
-}
-
-/* 
-  Styles for the p elements inside the page-section element.
-  This adds margin to the bottom of each paragraph.
-*/
-.page-section p {
-  margin-bottom: 20px;
-}
-
-/* 
-  Styles for the images in the about element.
-  This adds padding and sets the display to flex with a row layout.
-*/
-#about img {
-  max-width: 100%; 
-  height: auto; 
-  width: 350px; 
-}
-
-/* 
-  Styles for paragraph elements inside the about section.
-  This adds space between paragraphs.
-*/
-#about p {
-  margin-bottom: 1em; /* testing: Add space between paragraphs */
-}
-
-/* 
-  Styles for the about element.
-  This adds padding and sets the display to flex with a row layout.
-*/
-#about {
-  padding: 20px;
-  display: flex;
-  flex-direction: row; 
-}
-
-/* 
-  Styles for the about-content element.
-  This sets the display to flex, aligns items, and adds space between elements.
-*/
-.about-content {
-  display: flex;            
-  align-items: stretch;      
-  gap: 20px;               
-}
-
-/* 
-  Styles for the about-text element.
-  This sets the display to flex with a column layout.
-*/
-.about-text {
-  display: flex;
-  flex-direction: column;   
-}
-
-/* 
-  Styles for the work element.
-  This adds padding and sets the display to flex with a row layout.
-*/
-#work {
-  padding: 20px; 
-  display: flex; 
-  flex-direction: row; 
-}
-
-/* 
-  Styles for the work-content element.
-  This sets the display to flex, aligns items, and adds space between elements.
-*/
-.work-content {
-  display: flex;            
-  align-items: stretch;     
-  gap: 20px;              
-}
-
-/* 
-  Styles for the work-text element.
-  This sets the display to flex with a column layout.
-*/
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-/* 
-  Styles for the flex-item element.
-  This sets the border, background color, text color, height, width, flex basis, display, alignment, padding, margin, text decoration, blend mode, size, and transition.
-*/
-.flex-item {
-  border: 5px solid var(--secondary);
-  background-color: var(--primary);
-  color: var(--tertiary);
-  min-height: 150px;
-  max-height: 150px;
-  flex-basis: calc(50% - 1em);
-  display: flex;
-  align-items: flex-end;
-  padding: 0 0 20px 0;
-  margin: 0.5em;
-  text-decoration: none;
-  background-blend-mode: soft-light;
-  background-size: 150%;
-  transition: all 0.5s;
-  font-size: 0.9rem;
-}
-
-/* 
-  Styles for the first child of the flex-item element.
-  This sets the minimum height and flex basis.
-*/
-.flex-item:first-child { /* this is the first portfolio item */
-    min-height: 400px;
-    flex-basis: 100%;
-}
-
-/* 
-  Hover effect for the flex-item element.
-  This changes the background color when the user hovers over the element.
-*/
-.flex-item:hover {
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
-/* 
-  Styles for div elements inside the flex-item element.
-  This sets the background color and padding for the div.
-*/
-.flex-item div {
-  background-color: var(--secondary);
-  padding: 8px 10px;
-}
-
-/* 
-  Styles for the h3 element inside the flex-item element.
-  This sets the font size.
-*/
-.flex-item h3 {
-  font-size: 1.6rem;
-}
-
-/* 
-  Styles for the contact section with the id "contact".
-  This sets the padding and uses flexbox for layout.
-*/
-#contact {
-  padding: 20px; 
-  display: flex;
-  flex-direction: row;
-}
-
-/* 
-  Styles for the contact-content element.
-  This sets the display to flex, aligns items, and adds space between elements.
-*/
-.contact-content {
-  display: flex;            
-  align-items: stretch;
-  gap: 20px;                
-}
-
-/* 
-  Styles for the line element.
-  This sets the width, growth behavior, and background color for the line.
-*/
-.line {
+/* THIS IS THE VERTICAL DIVIDER LINE FOR EACH SECTION */
+.line { 
   width: 1px;              
   flex-grow: 1;            
   background-color: #000;   
 }
 
-/* 
-  Styles for the address element.
-  This sets the display to flex, wraps content, aligns items, and adds space between elements.
-*/
-address {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  height: 100%;
-  gap: 20px; 
-}
 
-/* 
-  Styles for the a elements inside the address element.
-  This sets the color, padding, text decoration, font size, font style, background image, background repeat, background size, background position, transition, margin, and display.
-*/
-address a {
-  color: var(--tertiary);
-  padding: 5px;
-  text-decoration: none;
-  font-size: 1.3rem;
-  font-style: normal;
-  background-image: linear-gradient(270deg, var(--primary) 0%, var(--primary) 100%);
-  background-repeat: no-repeat;
-  background-size: 100% 0.2em;
-  background-position: bottom;
-  transition: all 0.25s ease-in;
-  margin: 0 0.2rem 0.1rem;
-  display: inline-block;
-}
+/* START: HERO SECTION */
+  /* 
+    The purpose of this section of code is to style the hero section of
+    the webpage, which is a prominent, visually appealing section typically
+    located at the top of the page. The hero section is designed to grab the
+    user's attention and convey key information or a call to action
+  */
 
-/* 
-  Hover effect for the a elements inside the address element.
-  This changes the background size and text color when the user hovers over a link.
-*/
-address a:hover {
-  background-size: 100% 88%;
-  color: var(--secondary);
-}
-
-/* TODO: figure out how to make images show up in boxes in correct size*/
-
-/* portfolio project application images */
-
-/* 
-  Styles for the background images of the application elements.
-  Each application has a unique class and the same background properties.
-    - background-image: url('assets/images/application.jpg'); Sets the background image for the element.
-    - background-size: cover; Ensures the background image covers the entire element.
-    - background-position: center; Centers the background image within the element.
-*/
-
-/* Application 1*/
-.run-buddy {
-  background-image: url('assets/images/application.jpg');
-  background-size: cover;
-  background-position: center; 
-}
-
-/* Application 2*/
-.led-wall {
-  background-image: url('assets/images/application.jpg');
-  background-size: cover;
-  background-position: center; 
-}
-
-/* Application 3*/
-.react-calc {
-  background-image: url('assets/images/application.jpg');
-  background-size: cover;
-  background-position: center; 
-}
-
-/* Application 4*/
-.pastel-puzzles {
-  background-image: url('assets/images/application.jpg');
-  background-size: cover;
-  background-position: center; 
-}
-
-/* Application 5*/
-.surf-report {
-  background-image: url('assets/images/application.jpg');
-  background-size: cover;
-  background-position: center; 
-}
-
-
-/* Existing CSS rules */
-
-/* media queries */
-/* 
-  Media queries adjusts the layout and styles for smaller screens to ensure a responsive design.
-*/
-
-/* media queries for a max-width of 980px */
-@media screen and (max-width: 980px) {
-  header {
-    padding: 0 0 10px 0;
-    justify-content: center;
-    text-align: center;
+  .hero-banner {
+    background: rgb(68, 88, 120);
+    background-image: url("../images/02-hero-bg.jpg"), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: soft-light;
+    min-height: 30vh;
+    color: var(--light);
+    padding: 2% 6%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
   }
 
-  header h1 {
-    width: 100%;
-    padding: 5px;
-    margin-bottom: 10px;
-    font-size: 10vw;
+  .hero-banner div {
+    flex: 0 0 90%;
   }
 
-  header nav {
-    justify-content: center;
+  .hero-banner h2 {
+    background-color: var(--secondary);
+    color: var(--tertiary);
+    margin: 0;
+    padding: 5px 10px;
+    font-size: 2.3rem;
+    line-height: 1.2;
+    display: inline;
+  }
+/* END: HERO SECTION */
+  /* 
+    line 1
+    line 2
+    line 3
+    line 4
+  */
+
+/* START:  */ /* SEE NOTES ABOUT THIS SECTIONS PURPOSE BELOW */
+  .page-wrapper {
+    max-width: 88%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  .page-section > h2,
-  .page-section > div {
-    flex: 0 0 100%;
+  .page-section {
+    margin: 25px 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
   }
 
   .page-section > h2 {
-    border-right: none;
-    border-bottom: 4px solid var(--primary);
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    text-align: left;
-    font-size: 7vw;
+    flex: 0 0 20%;
+    text-align: right;
+    padding-right: 15px;
+    border-right: 4px solid var(--primary);
+    font-size: 4vw;
+    line-height: 1.1;
   }
+
+  .page-section > div {
+    flex: 0 0 77%;
+  }
+
+  .page-section p {
+    margin-bottom: 20px;
+  }
+/* END: */
+
+/* START OF NOTES ABOUT PAGE SECTION STYLES:
+  This section of code is used to style the layout and appearance of
+  the page sections in your HTML document. These styles ensure that
+  the sections are consistently formatted and responsive, providing a
+  cohesive look and feel across the webpage.
+
+  .page-wrapper {         <--This class is used to center the content and set a maximum width for the sections.
+    max-width: 88%;       <--This sets the maximum width of the page content to 88% of the viewport width.
+    margin-left: auto;    <--This centers the content horizontally by setting the left margin to auto.
+    margin-right: auto;   <--This centers the content horizontally by setting the right margin to auto.
+  }
+
+  .page-section {         <--This class is used to style the individual sections of the page.
+    margin: 25px 0;       <--This sets the top and bottom margins of the section to 25px.
+    padding: 10px 0;      <--This sets the top and bottom padding of the section to 10px.
+    display: flex;        <--This sets the display property of the section to flex.
+    flex-direction: row;  <--This sets the flex direction of the section to row.
+    flex-wrap: wrap;      <--This allows the section to wrap its content onto multiple lines if needed.
+    align-items: stretch; <--This sets the alignment of the items in the section to stretch.
+    justify-content: space-between; <--This evenly distributes the items in the section with space between them.
+  }
+
+  .page-section > h2 {    <--This styles the heading elements within the section.
+    flex: 0 0 20%;        <--This sets the flex basis of the heading to 20%.
+    text-align: right;    <--This aligns the text of the heading to the right.
+    padding-right: 15px;  <--This adds padding to the right side of the heading.
+    border-right: 4px solid var(--primary); <--This adds a border to the right side of the heading.
+    font-size: 4vw;       <--This sets the font size of the heading to 4% of the viewport width.
+    line-height: 1.1;     <--This sets the line height of the heading to 1.1.
+  }
+
+  .page-section > div {   <--This styles the content within the section.
+    flex: 0 0 77%;        <--This sets the flex basis of the content to 77%.
+  }
+
+  .page-section p {       <--This styles the paragraph elements within the section.
+    margin-bottom: 20px;  <--This sets the bottom margin of the paragraphs to 20px.
+  }
+END OF NOTES ABOUT PAGE SECTION STYLES */
+
+/* START: ABOUT SECTION */
+  #about img {
+    max-width: 100%; 
+    height: auto; 
+    width: 350px; 
+  }
+
+  #about {
+    padding: 20px;
+    display: flex;
+    flex-direction: row; 
+  }
+
+  .about-content {
+    display: flex;            
+    align-items: stretch;      
+    gap: 20px;               
+  }
+
+  .about-text {
+    display: flex;
+    flex-direction: column; 
+  }
+
+  .about-text p {
+    margin-bottom: 1em; 
+  }
+/* END: ABOUT SECTION */
+
+
+/* START: WORK SECTION */
+  #work {
+    padding: 20px; 
+    display: flex; 
+    flex-direction: row; 
+  }
+
+  .work-content {
+    display: flex;            
+    align-items: stretch;     
+    gap: 20px;              
+  }
+
+  .work-applications {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+
+  /* START: WORK APPLICATION BOXES */
+    .flex-item {
+      border: 5px solid var(--secondary);
+      background-color: var(--primary);
+      color: var(--tertiary);
+      min-height: 150px;
+      max-height: 150px;
+      flex-basis: calc(50% - 1em);
+      display: flex;
+      align-items: flex-end;
+      padding: 0 0 20px 0;
+      margin: 0.5em;
+      text-decoration: none;
+      background-blend-mode: soft-light;
+      background-size: 150%;
+      transition: all 0.5s;
+      font-size: 0.9rem;
+    }
+
+    .flex-item:first-child { /* this is the first portfolio item */
+      min-height: 400px;
+      flex-basis: 100%;
+    }
+
+    .flex-item:hover {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .flex-item div {
+      background-color: var(--secondary);
+      padding: 8px 10px;
+    }
+
+    .flex-item h3 {
+      font-size: 1.6rem;
+    }
+  /* END: WORK APPLICATION BOXES*/
+
+
+  /* START: WORK APPLICATION IMAGES */ /* ERROR: IMAGES NOT SHOWING IN BOXES*/
+
+    /* Application 1*/
+    .run-buddy {
+      background-image: url('assets/images/application.jpg');
+      background-size: cover;
+      background-position: center; 
+    }
+
+    /* Application 2*/
+    .led-wall {
+      background-image: url('assets/images/application.jpg');
+      background-size: cover;
+      background-position: center; 
+    }
+
+    /* Application 3*/
+    .react-calc {
+      background-image: url('assets/images/application.jpg');
+      background-size: cover;
+      background-position: center; 
+    }
+
+    /* Application 4*/
+    .pastel-puzzles {
+      background-image: url('assets/images/application.jpg');
+      background-size: cover;
+      background-position: center; 
+    }
+
+    /* Application 5*/
+    .surf-report {
+      background-image: url('assets/images/application.jpg');
+      background-size: cover;
+      background-position: center; 
+    }
+  /* END: WORK Application IMAGES*/
+/* END: WORK SECTION */
+
+
+/* START: CONTACT SECTION*/
+  #contact {
+    padding: 20px; 
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contact-content {
+    display: flex;            
+    align-items: stretch;
+    gap: 20px;                
+  }
+
+  /* START: CONTACT SECTION LINKS */
+    address {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      height: 100%;
+      gap: 20px; 
+    }
+
+    address a {
+      color: var(--tertiary);
+      padding: 5px;
+      text-decoration: none;
+      font-size: 1.3rem;
+      font-style: normal;
+      background-image: linear-gradient(270deg, var(--primary) 0%, var(--primary) 100%);
+      background-repeat: no-repeat;
+      background-size: 100% 0.2em;
+      background-position: bottom;
+      transition: all 0.25s ease-in;
+      margin: 0 0.2rem 0.1rem;
+      display: inline-block;
+    }
+
+    address a:hover {
+      background-size: 100% 88%;
+      color: var(--secondary);
+    }
+  /* END: CONTACT SECTION LINKS */
+/* END: CONTACT SECTION */
+
+/* START: MEDIA QUERIES SECTION */
+  /* START: MEDIA QUERIES MAX-WIDTH 980PX */
+  @media screen and (max-width: 980px) {
+    header {
+      padding: 0 0 10px 0;
+      justify-content: center;
+      text-align: center;
+    }
+
+    header h1 {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+      font-size: 10vw;
+    }
+
+    header nav {
+      justify-content: center;
+    }
+
+    .page-section > h2,
+    .page-section > div {
+      flex: 0 0 100%;
+    }
+
+    .page-section > h2 {
+      border-right: none;
+      border-bottom: 4px solid var(--primary);
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      text-align: left;
+      font-size: 7vw;
+    }
 
     .about img {
       width: 300px;
       height: 300px;
     }
   }
+  /* END: MEDIA QUERIES MAX-WIDTH 980PX */
 
-/* TODO: add media query for a max-width of 768px */
-/* Media queries for a max-width of 768px */
-@media screen and (max-width: 768px) {
-  header {
-    padding: 0 0 10px 0;
-    justify-content: center;
-    text-align: center;
-  }
-
-  header h1 {
-    width: 100%;
-    padding: 5px;
-    margin-bottom: 10px;
-    font-size: 10vw;
-  }
-
-  header nav {
-    justify-content: center;
-  }
-
-  .page-section > h2,
-  .page-section > div {
-    flex: 0 0 100%;
-  }
-
-  .page-section > h2 {
-    border-right: none;
-    border-bottom: 4px solid var(--primary);
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    text-align: left;
-    font-size: 7vw;
-  }
-
-  .about img {
-    width: 200px;
-    height: 200px;
-  }
-
-  .flex-item {
-    flex-basis: 100%;
-    min-height: 200px; /* testing: Set consistent height */
-    display: flex; /* testing: Ensures consistent alignment and sizing */
-    align-items: center; /* testing: Centers content vertically */
-    justify-content: center; /* testing: Centers content horizontally */
-  }
-
-  .flex-item:first-child {
-    min-height: 200px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-    .about img {
-      width: 100px;
-      height: 100px;
+  /* START: MEDIA QUERIES MAX-WIDTH 768PX */
+  @media screen and (max-width: 768px) {
+    header {
+      padding: 0 0 10px 0;
+      justify-content: center;
+      text-align: center;
     }
-}
+
+    header h1 {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+      font-size: 10vw;
+    }
+
+    header nav {
+      justify-content: center;
+    }
+
+    .page-section > h2,
+    .page-section > div {
+      flex: 0 0 100%;
+    }
+
+    .page-section > h2 {
+      border-right: none;
+      border-bottom: 4px solid var(--primary);
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      text-align: left;
+      font-size: 7vw;
+    }
+
+    .about img {
+      width: 200px;
+      height: 200px;
+    }
+
+    /* ERROR: "Should resize the minHeight when the screen size is less than or equal to
+              768px. Make sure all of the flex items have the same height."*/
+    .flex-item {
+      flex-basis: 100%;
+      min-height: 200px; /* testing: Set consistent height */
+      display: flex; /* testing: Ensures consistent alignment and sizing */
+      align-items: center; /* testing: Centers content vertically */
+      justify-content: center; /* testing: Centers content horizontally */
+    }
+
+    .flex-item:first-child {
+      min-height: 200px;
+    }
+  }
+  /* END: MEDIA QUERIES MAX-WIDTH 768PX */
+
+  /* START: MEDIA QUERIES MAX-WIDTH 480PX */
+  @media screen and (max-width: 480px) {
+      .about img {
+        width: 100px;
+        height: 100px;
+      }
+  }
+  /* END: MEDIA QUERIES MAX-WIDTH 480PX */
+/* END: MEDIA QUERIES SECTION */
