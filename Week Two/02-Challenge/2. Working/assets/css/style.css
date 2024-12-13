@@ -199,6 +199,7 @@ main {
 .hero-banner div {
   flex: 0 0 90%;
 }
+
 /* 
   Styles for the h2 element inside the hero-banner element.
 */
@@ -470,7 +471,8 @@ address a:hover {
 }
 
 /* TODO: figure out how to make images show up in boxes in correct size*/
-/* portfolio project images */
+
+/* portfolio project application images */
 
 /* 
   Styles for the background images of the application elements.
