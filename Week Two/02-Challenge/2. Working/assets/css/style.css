@@ -51,6 +51,10 @@ h6 {
   white-space: nowrap;
 }
 
+h2 {
+  width: 10%;
+}
+
 
 /* 
   Global styles for paragraph elements.
@@ -137,7 +141,7 @@ main {
 /* THIS IS THE VERTICAL DIVIDER LINE FOR EACH SECTION */
 .line { 
   width: 1px;              
-  flex-grow: 1;            
+  /* flex-grow: 1; */           
   background-color: #000;   
 }
 
@@ -271,9 +275,17 @@ END OF NOTES ABOUT PAGE SECTION STYLES */
   }
 
   .about-content {
+    width: 100%;
     display: flex;            
     align-items: stretch;      
     gap: 20px;               
+  }
+
+  .about-info {
+    width: 85%;
+    display: flex; 
+    justify-content: center;
+    gap: 20px;
   }
 
   .about-text {
@@ -295,12 +307,14 @@ END OF NOTES ABOUT PAGE SECTION STYLES */
   }
 
   .work-content {
+    width: 100%;
     display: flex;            
     align-items: stretch;     
     gap: 20px;              
   }
 
   .work-applications {
+    width: 85%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -350,7 +364,7 @@ END OF NOTES ABOUT PAGE SECTION STYLES */
 
     /* Application 1*/
     .run-buddy {
-      background-image: url('assets/images/application.jpg');
+      background-image: url('../images/application.jpg');
       background-size: cover;
       background-position: center; 
     }
@@ -394,13 +408,14 @@ END OF NOTES ABOUT PAGE SECTION STYLES */
   }
 
   .contact-content {
+    width: 100%;
     display: flex;            
     align-items: stretch;
     gap: 20px;                
   }
 
   /* START: CONTACT SECTION LINKS */
-    address {
+    .contact-info {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
@@ -409,7 +424,7 @@ END OF NOTES ABOUT PAGE SECTION STYLES */
       gap: 20px; 
     }
 
-    address a {
+    .contact-info a {
       color: var(--tertiary);
       padding: 5px;
       text-decoration: none;
@@ -424,7 +439,7 @@ END OF NOTES ABOUT PAGE SECTION STYLES */
       display: inline-block;
     }
 
-    address a:hover {
+    .contact-info a:hover {
       background-size: 100% 88%;
       color: var(--secondary);
     }
