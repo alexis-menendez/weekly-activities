@@ -1,0 +1,43 @@
+/* Reset body styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black; /* Background behind the box is black */
+}
+  
+/* Style the gradient box */
+#gradient-box {
+    width: 100%; /* Full width of the screen */
+    height: 75vh; /* 3/4 of the screen height */
+    background: radial-gradient(circle, midnightblue 20%, black 80%);
+    display: flex; /* Enables content alignment if needed */
+    justify-content: center; /* Centers any content horizontally */
+    align-items: center; /* Centers any content vertically */
+}
+
+.star {
+    position: absolute;
+    width: 5px; /* Small star size */
+    height: 5px;
+    background-color: white; /* Star color */
+    border-radius: 50%; /* Makes it circular */
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.8); /* Slight glow effect */
+}
+
+/* Style the white circle */
+#circle {
+    width: 350px; /* Diameter of the circle */
+    height: 350px; /* Diameter of the circle */
+    background-color: white; /* Circle's color */
+    border-radius: 50%; /* Makes it a perfect circle */
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.8); /* Faint glow effect */
+    transition: box-shadow 0.3s ease; /* Smooth transition when hovering */
+    display: flex; /* Enables content alignment if needed */
+    justify-content: center; /* Centers any content horizontally */
+    align-items: center; /* Centers any content vertically */
+}
+  
+/* Hover effect for the circle */
+#circle:hover {
+    box-shadow: 0 0 60px rgba(255, 255, 255, 1); /* Brighter glow */
+}
