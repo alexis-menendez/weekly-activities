@@ -278,11 +278,13 @@ circle.addEventListener('mouseleave', () => {
 h1.addEventListener('mouseenter', () => {
     gradientBox.classList.add('hovered');
     circle.classList.add('hovered');
+    staticStarsContainer.classList.add('faded');
 });
 
 h1.addEventListener('mouseleave', () => {
     gradientBox.classList.remove('hovered');
     circle.classList.remove('hovered');
+    staticStarsContainer.classList.remove('faded'); 
 });
 
 

@@ -73,3 +73,12 @@
 #static-stars-container.transparent {
     opacity: 0.5; /* Faded opacity */
 }
+
+.faded {
+    opacity: 0.15;
+    transition: opacity 1s ease; /* Smooth transition for opacity */
+}
+
+#static-stars-container.faded {
+    opacity: 0.15; /* Faded opacity */
+}
