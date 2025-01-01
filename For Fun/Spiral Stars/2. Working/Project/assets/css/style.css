@@ -61,6 +61,28 @@
     transition: transform 1s ease, filter 0.5s ease, background-color 0.5s ease, opacity 1s ease; /* Smooth transition for transform, filter, background-color, and opacity */
 }
 
+@keyframes springyHover {
+    0% {
+        transform: scale(1);
+    }
+    40% {
+        transform: scale(1.2);
+    }
+    60% {
+        transform: scale(0.9);
+    }
+    80% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.star.springy {
+    animation: springyHover 0.5s ease-out;
+}
+
 .transparent {
     opacity: 0.5; /* Adjust the opacity as needed */
     transition: opacity 1s ease; /* Smooth transition for opacity */
@@ -81,4 +103,75 @@
 
 #static-stars-container.faded {
     opacity: 0.15; /* Faded opacity */
+}
+
+
+@keyframes moveTop {
+    0% {
+        transform: translateX(-100%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+@keyframes moveMiddle {
+    0% {
+        transform: translateX(-100%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+@keyframes moveBottom {
+    0% {
+        transform: translateX(-100%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+.cloud {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+#cloud1.animate {
+    animation: moveTop 15s linear infinite;
+    top: 0;
+    left: 0;
+}
+
+#cloud2.animate {
+    animation: moveTop 30s linear infinite 0.5s;
+    top: 0;
+    left: 0;
+}
+
+#cloud3.animate {
+    animation: moveMiddle 20s linear infinite 0.75s;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+#cloud4.animate {
+    animation: moveBottom 25s linear infinite 0.25s;
+    bottom: 0;
+    left: 0;
+}
+
+#cloud5.animate {
+    animation: moveBottom 35s linear infinite 0.75s;
+    bottom: 0;
+    left: 0;
 }

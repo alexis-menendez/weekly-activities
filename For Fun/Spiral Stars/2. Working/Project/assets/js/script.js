@@ -275,17 +275,92 @@ circle.addEventListener('mouseleave', () => {
     staticStarsContainer.classList.remove('transparent'); // Add this line
 });
 
+
+// change color of gradiet box when hovering over header 1
 h1.addEventListener('mouseenter', () => {
-    gradientBox.classList.add('hovered');
-    circle.classList.add('hovered');
-    staticStarsContainer.classList.add('faded');
+  gradientBox.classList.add('hovered');
+  circle.classList.add('hovered');
+  staticStarsContainer.classList.add('faded');
 });
 
 h1.addEventListener('mouseleave', () => {
-    gradientBox.classList.remove('hovered');
-    circle.classList.remove('hovered');
-    staticStarsContainer.classList.remove('faded'); 
+  gradientBox.classList.remove('hovered');
+  circle.classList.remove('hovered');
+  staticStarsContainer.classList.remove('faded');
 });
 
+// change opacity of clouds when hovering over header 1
+h1.addEventListener('mouseenter', () => {
+  const clouds = [
+    document.getElementById('cloud1'),
+    document.getElementById('cloud2'),
+    document.getElementById('cloud3'),
+    document.getElementById('cloud4'),
+    document.getElementById('cloud5')
+  ];
+
+  clouds.forEach((cloud) => {
+    cloud.classList.add('animate');
+  });
+});
+
+h1.addEventListener('mouseleave', () => {
+  const clouds = [
+    document.getElementById('cloud1'),
+    document.getElementById('cloud2'),
+    document.getElementById('cloud3'),
+    document.getElementById('cloud4'),
+    document.getElementById('cloud5')
+  ];
+
+  clouds.forEach((cloud) => {
+    cloud.classList.remove('animate');
+  });
+});
+
+// Add springy hover effect to moving stars
+gradientBox.addEventListener('mousemove', (event) => {
+  // Ensure the effect doesn't apply when hovering over the circle
+  if (circle.matches(':hover')) {
+    return;
+  }
+
+  const rect = gradientBox.getBoundingClientRect();
+  const mouseX = event.clientX - rect.left;
+  const mouseY = event.clientY - rect.top;
+
+  movingStars.forEach((star, index) => {
+    const starElement = movingStarsContainer.children[index];
+
+    // Calculate the distance from the mouse to the star
+    const distanceX = mouseX - star.x;
+    const distanceY = mouseY - star.y;
+    const distance = Math.sqrt(distanceX ** 2 + distanceY ** 2);
+
+    // Only move stars within a certain radius (e.g., 150px)
+    const maxDistance = 150;
+    if (distance < maxDistance) {
+      const effectStrength = 1 - distance / maxDistance; // Closer stars move more
+
+      // Calculate the offset with diminishing intensity based on distance
+      const offsetX = (distanceX / .25) * effectStrength; // Adjust divisor for "springiness"
+      const offsetY = (distanceY / .25) * effectStrength;
+
+      // Apply the transform
+      starElement.style.transform = `translate(${offsetX}px, ${offsetY}px) scale(${1 + 0.1 * effectStrength})`;
+    } else {
+      // Reset stars outside the interaction radius
+      starElement.style.transform = 'translate(0, 0) scale(1)';
+    }
+  });
+});
+
+// Reset all stars when the mouse leaves the gradient box
+gradientBox.addEventListener('mouseleave', () => {
+  movingStars.forEach((star, index) => {
+    const starElement = movingStarsContainer.children[index];
+    starElement.style.transform = 'translate(0, 0) scale(1)'; // Reset position and scale
+  });
+});
 
 });
